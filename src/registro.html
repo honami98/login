@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registrarse</title>
+</head>
+<body>
+  <h1>Registrarse</h1>
+  <form action="/registro" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    <label for="email_registro">Correo Electrónico:</label>
+    <input type="email" id="email_registro" name="email_registro" required><br><br>
+    <label for="contraseña_registro">Contraseña:</label>
+    <input type="password" id="contraseña_registro" name="contraseña_registro" required><br><br>
+    <select name="rol" id="rol"  required>
+        <option value="mesero">Mesero</option>
+        <option value="chef">Chef</option>
+        <option value="cajero">Cajero</option>
+    </select><br><br>
+    <input type="submit" value="Registrarse">
+    
+  </form>
+</body>
+</html>
